@@ -1,0 +1,47 @@
+// In this file you can override the default variables of Bootstrap
+// Do you want primary to be green? Just add "$primary: #00FF00;" to this file and the theme will automatically compile the scss for you.
+$primary: #7414FF !default;
+$secondary: #48EA8D !default;
+$info: #1A6F8E !default;
+$warning: #FABC53 !default;
+$danger: #D04973 !default;
+$success: #48EA8D !default;
+$dark: #2E2611 !default;
+$black: #0C0C0C !default;
+$light: #FFF7F0 !default;
+$dark-op: rgba($dark, 0.15) !default;
+$dark-op-big: rgba($dark, 0.02) !default;
+
+$font-family-base: 'Source Sans 3';
+$font-family-sans-serif: 'Goofley Condensed';
+
+$font-size-base: 1.125rem !default; // 18px
+$line-height-base: 1.35 !default; //
+$line-height-small: 1.15 !default; //
+
+$h1-font-size:5rem !default; // 80px
+$h2-font-size: 3.75rem !default; // 60px
+$h3-font-size: 2.375rem !default; // 38px
+$post-font-size: 1.75rem !default; // 28px
+$h4-font-size: 1.375rem !default; // 22px
+$h5-font-size: 1.125rem !default; // 18px
+$h6-font-size: 0.875rem !default; // 14px
+
+$space-section: 5rem !default; // 80px
+
+$br-normal: 1rem !default;
+$br-max: 30rem !default;
+
+$transition-base: all 0.2s ease-in-out !default;
+
+// scss-docs-start container-max-widths
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1024px,
+  xl: 1200px,
+  xxl: 1600px
+) !default;
+// scss-docs-end container-max-widths
+
+
