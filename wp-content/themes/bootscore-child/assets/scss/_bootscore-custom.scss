@@ -400,7 +400,7 @@ nav {
 
             @include media-breakpoint-down(xl) {
               font-size: $font-size-base;
-    }
+            }
           }
         }
       }
@@ -623,33 +623,6 @@ nav {
 
     .container {
       position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        display: block;
-        bottom: -70px;
-        right: 35px;
-        width: 140px;
-        height: 140px;
-        background: url("../img/ico-circle.svg") no-repeat center center;
-        background-size: contain;
-        z-index: 1;
-        animation: spin 10s linear infinite;
-
-        @include media-breakpoint-down(lg) {
-          display: none;
-        }
-
-        @keyframes spin {
-          0% {
-            transform: rotate(0deg);
-          }
-          100% {
-            transform: rotate(360deg);
-          }
-        }
-      }
     }
   }
 }
@@ -669,8 +642,17 @@ nav {
   .container {
     justify-content: flex-end;
 
+    @include media-breakpoint-down(lg) {
+      padding-left: $spacer * 1;
+      padding-right: $spacer * 1;
+    }
+
     .navbar-brand {
       margin-right: auto;
+
+      @include media-breakpoint-down(md) {
+        max-width: 150px;
+      }
     }
   }
 
@@ -720,6 +702,12 @@ nav {
     }
   }
 
+  .wp-block-button__link  {
+    @include media-breakpoint-down(md) {
+      padding: $spacer * 0.5 $spacer * 1;
+    }
+  }
+
   .nav-toggler {
     padding: 0;
     border-radius: $br-max;
@@ -729,6 +717,12 @@ nav {
     background: $dark;
     color: white;
     border-color: $dark;
+
+    @include media-breakpoint-down(md) {
+      width: $spacer * 2.5;
+      height: $spacer * 2.5;
+      margin-right: - $spacer * 0.5;
+    }
   }
 
   .top-nav-widget-2 {
@@ -867,7 +861,7 @@ nav {
 
     &.h3 {
       letter-spacing: normal;
-       font-size: $h3-font-size;
+      font-size: $h3-font-size;
     }
   }
 }
